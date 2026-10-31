@@ -1,0 +1,11 @@
+{
+  "name": "youtube-popular-player",
+  "version": "1.4.2",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/player.test.cjs"
+  },
+  "devDependencies": {
+    "jsdom": "25.0.1"
+  }
+}
