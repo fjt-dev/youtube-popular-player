@@ -1,7 +1,7 @@
 .ypp-controls { display:inline-flex; align-items:center; gap:8px; margin:0 12px 0 8px; vertical-align:middle; flex-shrink:0; font:500 14px/1.4 Roboto,Arial,sans-serif; color:var(--yt-spec-text-primary,#0f0f0f); }
 .ypp-button { border:0; border-radius:18px; padding:8px 14px; font:inherit; white-space:nowrap; cursor:pointer; background:var(--yt-spec-badge-chip-background,rgba(127,127,127,.15)); color:inherit; }
 .ypp-button:hover { filter:brightness(.9); }
-.ypp-button:focus-visible { outline:3px solid #3ea6ff; outline-offset:3px; }
+.ypp-button:focus-visible { outline:3px solid var(--yt-spec-call-to-action,#3ea6ff); outline-offset:3px; }
 .ypp-button:disabled { opacity:.45; cursor:default; }
 .ypp-primary { background:#d92332; color:#fff; }
 .ypp-panel { position:fixed; z-index:2200; right:20px; bottom:24px; display:flex; align-items:center; gap:10px; max-width:min(620px,calc(100vw - 64px)); padding:12px 16px; border:1px solid rgba(127,127,127,.3); border-radius:14px; background:var(--yt-spec-base-background,#fff); color:var(--yt-spec-text-primary,#0f0f0f); box-shadow:0 5px 24px #0003; font:500 14px/1.4 Roboto,Arial,sans-serif; flex-wrap:wrap; }
@@ -20,7 +20,7 @@
 .ypp-row-details { display:flex; align-items:center; flex:1; min-width:0; gap:8px; }
 .ypp-row-title { flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
 .ypp-row-badge { flex-shrink:0; border-radius:10px; padding:3px 7px; font-size:10px; line-height:1.2; background:rgba(127,127,127,.18); opacity:.8; }
-.ypp-row-upcoming { background:rgba(62,166,255,.16); color:#1671ad; }
+.ypp-row-upcoming { background:rgba(62,166,255,.16); color:var(--yt-spec-call-to-action,#1671ad); }
 .ypp-list-row[hidden] { display:none; }
 .ypp-panel.ypp-player { display:block; box-sizing:border-box; width:380px; max-width:calc(100vw - 32px); max-height:calc(100vh - 80px); overflow:auto; padding:12px; border-radius:12px; }
 .ypp-player-bar { display:flex; align-items:center; gap:12px; }
@@ -37,12 +37,13 @@
 .ypp-icon-button { display:inline-flex; align-items:center; justify-content:center; width:32px; height:32px; padding:6px; border-radius:8px; background:transparent; }
 .ypp-icon-button svg { display:block; width:20px; height:20px; fill:currentColor; }
 .ypp-icon-button:hover, .ypp-icon-button[aria-expanded="true"] { background:rgba(127,127,127,.15); filter:none; }
-.ypp-icon-button.ypp-list-toggle-open { background:rgba(62,166,255,.16); color:#1671ad; }
+.ypp-icon-button.ypp-list-toggle-open { background:rgba(62,166,255,.16); color:var(--yt-spec-call-to-action,#1671ad); }
 .ypp-icon-button.ypp-list-toggle-open:hover { background:rgba(62,166,255,.24); }
 .ypp-icon-button:disabled { opacity:.25; }
 .ypp-player .ypp-queue-container { margin:0 0 10px; padding:0 0 10px; border-top:0; border-bottom:1px solid rgba(127,127,127,.25); }
 .ypp-player .ypp-list-heading { font-size:12px; font-weight:700; margin-bottom:6px; }
 .ypp-current-title { font-size:12px; line-height:1.5; opacity:.65; margin-bottom:10px; overflow-wrap:anywhere; }
 .ypp-player .ypp-list { max-height:min(320px,40vh); }
-.ypp-toast { position:fixed; z-index:2300; bottom:100px; left:50%; transform:translateX(-50%); padding:12px 20px; border-radius:10px; background:#222; color:#fff; font:14px/1.5 Arial,sans-serif; max-width:80vw; }
+.ypp-toast { position:fixed; z-index:2300; bottom:100px; left:50%; transform:translateX(-50%); padding:12px 20px; border:1px solid rgba(127,127,127,.3); border-radius:10px; background:var(--yt-spec-base-background,#fff); color:var(--yt-spec-text-primary,#0f0f0f); box-shadow:0 5px 24px #0003; font:14px/1.5 Arial,sans-serif; max-width:80vw; }
+html[dark] .ypp-panel, html[dark] .ypp-stop-confirm, html[dark] .ypp-toast { background:#0f0f0f; color:#f1f1f1; }
 @media(max-width:600px) { .ypp-panel { right:12px; bottom:12px; } .ypp-controls { gap:4px; } }
