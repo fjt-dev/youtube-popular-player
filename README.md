@@ -1,9 +1,6 @@
 <div align="center">
   <h1>YouTube Popular Player</h1>
   <p>YouTubeのチャンネル人気順をそのまま再生</p>
-
-<a href="https://github.com/fjt-dev/youtube-popular-player/actions/workflows/tests.yml"><img src="https://github.com/fjt-dev/youtube-popular-player/actions/workflows/tests.yml/badge.svg" alt="Tests" /></a>
-
 </div>
 
 ## インストール
