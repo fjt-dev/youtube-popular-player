@@ -45,4 +45,5 @@
 .ypp-current-title { font-size:12px; line-height:1.5; opacity:.65; margin-bottom:10px; overflow-wrap:anywhere; }
 .ypp-player .ypp-list { max-height:min(320px,40vh); }
 .ypp-toast { position:fixed; z-index:2300; bottom:100px; left:50%; transform:translateX(-50%); padding:12px 20px; border:1px solid rgba(127,127,127,.3); border-radius:10px; background:var(--yt-spec-base-background,#fff); color:var(--yt-spec-text-primary,#0f0f0f); box-shadow:0 5px 24px #0003; font:14px/1.5 Arial,sans-serif; max-width:80vw; }
+html[dark] .ypp-panel, html[dark] .ypp-stop-confirm, html[dark] .ypp-toast { background:#0f0f0f; color:#f1f1f1; }
 @media(max-width:600px) { .ypp-panel { right:12px; bottom:12px; } .ypp-controls { gap:4px; } }
