@@ -1,6 +1,7 @@
 <div align="center">
   <h1>YouTube Popular Player</h1>
   <p>YouTubeのチャンネル人気順をそのまま再生</p>
+  <img src='./pic/001.png' />
 </div>
 
 ## インストール
