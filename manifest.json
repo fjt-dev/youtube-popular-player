@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "YouTube Popular Player",
-  "version": "1.4.2",
+  "version": "1.5.0",
   "description": "チャンネルの「人気の動画」の横に再生ボタンを追加し、人気順で連続再生します。",
   "minimum_chrome_version": "102",
   "permissions": ["storage"],
