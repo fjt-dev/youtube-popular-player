@@ -427,6 +427,10 @@
     attemptedId = null;
     request("read").then(value => { queue = value; reconcile(); }).catch(showError);
   });
+  // Hide the floating panel/toast while any element is fullscreen.
+  const syncFullscreen = () => document.documentElement.toggleAttribute("ypp-fullscreen", !!document.fullscreenElement);
+  document.addEventListener("fullscreenchange", syncFullscreen);
+  syncFullscreen();
   new MutationObserver(records => {
     if (records.every(record => record.target.closest?.(".ypp-panel, .ypp-controls, .ypp-toast"))) return;
     schedule();
