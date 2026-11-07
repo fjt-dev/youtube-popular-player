@@ -49,3 +49,4 @@ html[dark] .ypp-panel, html[dark] .ypp-stop-confirm, html[dark] .ypp-toast { bac
 html[dark] .ypp-row-upcoming, html[dark] .ypp-icon-button.ypp-list-toggle-open { background:rgba(62,166,255,.34); color:#c2e3ff; }
 html[dark] .ypp-icon-button.ypp-list-toggle-open:hover { background:rgba(62,166,255,.46); }
 @media(max-width:600px) { .ypp-panel { right:12px; bottom:12px; } .ypp-controls { gap:4px; } }
+html[ypp-fullscreen] .ypp-panel, html[ypp-fullscreen] .ypp-toast { display:none !important; }
